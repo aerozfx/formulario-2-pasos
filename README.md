@@ -1,0 +1,1 @@
+Formulario de dos pasos, el cual una vez cumplimentado, envía los datos al LocalStorage
