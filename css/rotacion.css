@@ -1,0 +1,28 @@
+main{
+    perspective: 2000px;
+}
+.formularios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* --- */
+
+    position: relative;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+
+.formularios.vuelta{
+    transform: rotateY(180deg);
+}
+
+#primer-formulario{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#segundo-formulario{
+    position: absolute;
+    backface-visibility: hidden;
+}

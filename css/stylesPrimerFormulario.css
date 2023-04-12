@@ -1,0 +1,122 @@
+* {
+    font-family: 'system-ui';
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#primer-formulario img{
+    height: 100px;
+}
+
+#primer-formulario {
+    min-height: 550px;
+    width: 400px;
+    background-color: #EEF3F8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#institucion,
+#cantidad {
+    padding: 15px 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+#institucion-opciones {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+#institucion #opcion-banco,
+#institucion #opcion-financiera {
+    display: flex;
+    gap: 20px;
+}
+
+#opciones {
+    padding: 5px;
+    width: 280px
+}
+
+#deuda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#rango-deuda {
+    width: 90%;
+    display: flex;
+    align-content: center;
+    gap: 20px;
+}
+
+#monto-deuda {
+    width: 75%;
+}
+
+#monto-texto {
+    padding: 5px 10px;
+    width: 25%;
+}
+
+#cantidad-deuda {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#boton-submit-segundo-formulario{
+    padding: 15px;
+}
+.input-boton{
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 1000px;
+    border: 1px solid;
+    padding: 10px 50px;
+    transition: all .5s ease;
+}
+
+.input-boton.desbloqueado {
+    color: #fff;
+    border: none;
+    background-color: #B5D444;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, .2);
+
+}
+
+.input-boton.desbloqueado:hover {
+    cursor: pointer;
+    background-color: #a5be40;
+    transition: 0.2s ease background-color;
+}
+

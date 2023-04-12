@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesPrimerFormulario.css">
+  <link rel="stylesheet" href="css/segundoFormulario.css">
+  <link rel="stylesheet" href="css/rotacion.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main id="main-form">
+    <div class="formularios">
+    <section id="primer-formulario">
+      
+      <form action="">
+        <img src="/images/Logo_Resuelve_tu_Deuda.png" alt="">
+        <div id="institucion">
+
+          <h1 class="title">Institución</h1>
+          <section id="institucion-opciones">
+            <div id="opcion-banco">
+              <label for="banco">Banco</label>
+              <input type="radio" name="institucion" value="banco" id="banco">
+            </div>
+            <div id="opcion-financiera">
+              <label for="financiera">Financiera</label>
+              <input type="radio" name="institucion" value="financiera" id="financiera">
+            </div>
+          </section>
+
+          <section id="institucion-select">
+            <select name="opciones" id="opciones" disabled>
+              <option value="opcion-01"></option>
+              <option value="opcion-02"></option>
+              <option value="opcion-03"></option>
+            </select>
+          </section>
+
+        </div>
+
+        <div id="cantidad">
+
+          <h1 class="title">Monto de la deuda</h1>
+          <section id="deuda">
+            <div id="rango-deuda">
+              <input type="range" min="4000" max="30000" name="" id="monto-deuda" step="500" value="17000">
+              <input type="text" name="" id="monto-texto" value="" placeholder="o más" >
+            </div>
+            <p id="cantidad-deuda" >17.000 EUR</p>
+          </section>
+
+        </div>
+
+        <section id="boton-submit-primer-formulario" >
+          <input type="button" name="" id="button-primer-formulario" value="Siguiente" onclick="recuperarDatos()" class="input-boton">
+        </section>
+
+      </form>
+    </section>
+
+    <!-- Segundo formulario -->
+    <section id="segundo-formulario" style="transform: rotateY(180deg);">
+      <img src="/images/Logo_Resuelve_tu_Deuda.png" alt="">
+      <form action="">
+        <div class="input" id="nombre-input">
+          <label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" id="nombre" required placeholder="Adrián">
+        </div>
+        <div class="input" id="apellido-paterno-input">
+          <label for="apellido-paterno">Apellido paterno: </label>
+          <input type="text" name="apellido-paterno" id="apellido-paterno" required placeholder="Martinez">
+        </div>
+        <div class="input" id="apellido-materno-input">
+          <label for="apellido-materno">Apellido materno: </label>
+          <input type="text" name="apellido-materno" id="apellido-materno" required placeholder="Peralda">
+        </div>
+        <div class="input" id="telefono-input">
+          <label for="telefono">Telefono: </label>
+          <input type="tel" name="telefono" id="telefono" required maxlength="9" placeholder="612345678">
+        </div>
+        <div class="input" id="email-input">
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required placeholder="tuemail@example.com">
+        </div>
+
+        <section id="boton-submit-segundo-formulario">
+          <input type="button" name="" id="button-segundo-formulario" value="Enviar" onclick="enviarDatos()">
+        </section>
+      </form>
+  </section>
+  </div>
+  </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
